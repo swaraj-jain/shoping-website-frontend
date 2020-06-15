@@ -1,0 +1,29 @@
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();   
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+          $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+          });
+        });
+        </script>
+
+    <script>
+      $(document).ready(function(){
+        $('body').scrollspy({target: ".navbar", offset: 50});   
+      });
+      </script>
+      <script>
+        AOS.init({
+          offset:400,
+          dutation:1200
+        });
+      </script>
+    </body>
+</html>
