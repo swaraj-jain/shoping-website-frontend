@@ -36,7 +36,6 @@ body{
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-y: scroll;
 }
 .cardm{
     display: grid;
