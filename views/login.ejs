@@ -1,0 +1,27 @@
+<%- include('./partials/heade') -%>
+  <form class="form-signin animate__animated animate__fadeIn animate__slower" action="/login" method="POST" style="margin-top: 50px; color: white;" >
+      <div class="text-center mb-4">
+        <img class="mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvzvvr2afrHfH9YBXNxY2Jw10BZ_k0g8jcGXD6S19Xo0COoEuz&usqp=CAU" alt="" width="110" height="110">
+        <h1 class="h1 mb-3 font-weight-normal">MY BAZAR</h1>
+      </div>
+      <p style="font-size: 19px; margin-bottom: 1.5px;">USERNAME</p>
+      <div class="form-label-group">
+        <input type="text" class="form-control" placeholder="username" name="username" required autofocus>
+      </div>
+      <p style="font-size: 19px; margin-bottom: 1.5px;">PASSWORD</p>
+      <div class="form-label-group">
+        <input type="password"  class="form-control" placeholder="Password" name="password" required>
+      </div>
+    
+      <div class="checkbox mb-3">
+        <label id="checkeforrember">
+          <input type="checkbox" value="remember-me" style="width: 16px;
+          height: 16px;" > Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+      <p class="mt-5 mb-3 text-muted text-center" style="color: white;">&copy; 2020</p>
+      <h4>Don't have an account? <a href="/register" id="noaccount" style="color: white; font-weight: 900; ">Join</a></h2>
+
+    </form>
+  <%- include('./partials/foote') -%>

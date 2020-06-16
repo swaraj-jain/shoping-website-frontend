@@ -6,7 +6,8 @@ body{
 	min-height: 100vh;
     min-width: 100vw;
     font-size: 18px;
-    padding-bottom: 300px;
+    font-family: 'Nunito', sans-serif;
+    
 }
 #myNavbar{
 	font-size: 20px;
@@ -68,24 +69,11 @@ body{
     padding:40px;
      margin:20px 0px;
 }
-@media(max-width: 700px){
-    .cardm{
-        display: block;
-    }
-    .hdr{
-        margin-left: 0em;
-        margin-right: 0em;
-    }
-    #woman{
-        padding: 20px;
-    }
-    #children{
-        padding: 20px;
-    }
-    #man{
-        padding: 20px;
-    }
+#others{
+    padding:40px;
+    margin:20px 0px;
 }
+
 .btn-danger{
     color: white;
     background: #ff5964;
@@ -101,4 +89,243 @@ body{
 }
 .badge-success{
     background: #a0c4e2;
+}
+#fb:hover{
+	background: #3b5998;
+	transition: background 0.4s;
+}
+#instagram:hover{
+   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+   transition: background 0.4s;
+}
+#github:hover{
+	background: #7DBBE6;
+	transition: background 0.4s;
+}
+#mail:hover{
+	background: #B23121;
+	transition: background 0.4s;
+}
+ul li a{
+	color: white;
+}
+ul li a:hover{
+    text-decoration: none;
+    color: wheat;
+}
+.page-footer .up{
+    padding-right: 1.4rem;
+}
+
+
+.post-slider{
+    position: relative;
+}
+.post-slider .slider-title{
+    text-align: center;
+    font-family: 'Candal', sans-serif;
+    margin: 30px auto;
+}
+.post-slider .post-wrapper{
+    height: 350px;
+    width: 84%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.post-slider .prev{
+    position: absolute;
+    font-size: 1.5em;
+    color: #003089;
+    left: 30px;
+    top: 50%;
+    cursor: pointer;
+}
+.post-slider .next{
+    position: absolute;
+    font-size: 1.5em;
+    color: #003089;
+    right: 30px;
+    top: 50%;
+    cursor: pointer;
+}
+.post-slider .post-wrapper .post{
+    height: 330px;
+    width: 300px;
+    margin: 10px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 1rem 1rem 1rem -1rem black;
+}
+.post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+.post-slider .post-wrapper .post .slider-info{
+    height: 7rem;
+    padding: 0 10px;
+    text-decoration: none;
+    color: inherit;
+}
+.post-slider .post-wrapper .post .slider-info :hover{
+    color: #006669;
+}
+.post:hover{
+    filter: brightness(80%);
+}
+.contact-input{
+    margin-bottom: 1rem; 
+    padding-left: 1rem;
+    width: 30rem;
+}
+#ml{
+    padding-left: 0%;
+}
+#pd{
+    padding-left: 3rem;
+}
+#bz{
+    padding-left: 5rem;
+}
+@media(max-width: 700px){
+    .cardm{
+        display: block;
+    }
+    .hdr{
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+    #woman {
+        padding: 20px;
+    }
+    #others
+    {
+        padding: 20px;
+    }
+    #children{
+        padding: 20px;
+    }
+    #man{
+        padding: 20px;
+    }
+    #ml  {
+        padding-left:3rem;
+    }
+    .post-slider .post-wrapper .post{
+        width: 90%;
+    }
+    .post{
+        display: block;
+    }
+    #pd{
+        padding-left: 3rem;
+    }
+    #bz{
+        padding-left: 3rem;
+    }
+    #bhb{
+        font-size: 4rem;
+    }
+    #bhw{
+        font-size: 4rem;
+    }
+}
+
+.form-signin {
+	width: 100%;
+	max-width: 420px;
+	padding: 15px;
+	margin: auto;
+  }
+  
+  .form-label-group {
+	position: relative;
+	margin-bottom: 1.5rem;
+  }
+  
+  .form-label-group > input,
+  .form-label-group > label {
+	height: 5.125rem;
+	padding: 1rem;
+  }
+  
+  .form-label-group > label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	margin-bottom: 0; /* Override default `<label>` margin */
+	line-height: 2.5;
+	color: #495057;
+	pointer-events: none;
+	cursor: text; /* Match the input under the label */
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	transition: all .1s ease-in-out;
+  }
+  
+  .form-label-group input::-webkit-input-placeholder {
+	color: transparent;
+  }
+  
+  .form-label-group input:-ms-input-placeholder {
+	color: transparent;
+  }
+  
+  .form-label-group input::-ms-input-placeholder {
+	color: transparent;
+  }
+  
+  .form-label-group input::-moz-placeholder {
+	color: transparent;
+  }
+  
+  .form-label-group input::placeholder {
+	color: transparent;
+  }
+  
+  .form-label-group input:not(:placeholder-shown) {
+	padding-top: 1.25rem;
+	padding-bottom: .25rem;
+  }
+  
+  .form-label-group input:not(:placeholder-shown) ~ label {
+	padding-top: .25rem;
+	padding-bottom: .25rem;
+	font-size: 18px;
+	color: #777;
+  }
+  .form-control{
+	  font-size: 22px;
+  }
+  #checkeforrember{
+	  font-size: 20px;
+  }
+  #noaccount{
+	  color: #5407a1;
+  }
+  #noaccount:hover{
+	font-size: 20px;
+}
+.navbar-inverse .navbar-toggle{
+   color: white;
+    border: 1px solid white;
+}
+.badge-success{
+    font-size: 1.5rem;
+    font-family: 'MuseoModerno', cursive;
+}
+#bhw{
+    font-size: 7rem; color: azure;
+     text-align: center;
+      font-family: 'Lexend Tera', sans-serif;
+}
+#bhb{
+ font-size: 7rem; 
+ color: #1e3d59; 
+ text-align: center;
+ font-family: 'Lexend Tera', sans-serif;
 }

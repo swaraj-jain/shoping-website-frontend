@@ -15,6 +15,12 @@ app.get("/",function(req,res){
     console.log("request for landing page");
     res.render("landing");
 });
+app.get("/login",function(req,res){
+    res.render("login")
+})
+app.get("/register",function(req,res){
+    res.render("register");
+})
 
 
 app.listen(process.env.PORT || 3000,function(){
